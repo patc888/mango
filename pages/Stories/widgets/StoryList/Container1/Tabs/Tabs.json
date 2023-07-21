@@ -1,7 +1,7 @@
 {
     "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
     "mobileBottomRow": 35,
-    "widgetName": "Words",
+    "widgetName": "Tabs",
     "borderColor": "#E0DEDE",
     "isCanvas": true,
     "displayName": "Tabs",
@@ -100,7 +100,7 @@
     "key": "86m6lwiqwd",
     "backgroundColor": "#FFFFFF",
     "isDeprecated": false,
-    "rightColumn": 64,
+    "rightColumn": 63,
     "dynamicHeight": "FIXED",
     "widgetId": "h6vayrxay8",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",

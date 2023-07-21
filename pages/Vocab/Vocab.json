@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1020,
+          "bottomRow": 490,
           "containerStyle": "none",
           "snapRows": 101,
           "parentRowSpace": 1,
@@ -26,6 +26,7 @@
           "leftColumn": 0
         },
         "layoutOnLoadActions": [],
+        "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Vocab",
         "deleted": false,

@@ -17,7 +17,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/v1/feeds",
+      "path": "/feeds",
       "headers": [
         {
           "key": "Authorization",
