@@ -1,7 +1,7 @@
 {
     "boxShadow": "none",
     "mobileBottomRow": 8,
-    "widgetName": "Image1",
+    "widgetName": "StoryImage",
     "displayName": "Image",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.30c8cbd442cce232b01ba2d434c53a53.svg",
     "topRow": 0,

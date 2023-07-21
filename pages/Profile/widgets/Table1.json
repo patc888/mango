@@ -104,7 +104,7 @@
     "textSize": "0.875rem",
     "widgetId": "7qvrvrwy4c",
     "minWidth": 450,
-    "tableData": "{{feeds.data.feeds.map((feed) => {\n  return { url: feed };\n  });\n}}",
+    "tableData": "{{get_feeds.data.feeds.map((feed) => {\n  return { url: feed };\n  });\n}}",
     "label": "Data",
     "searchKey": "",
     "parentId": "0",

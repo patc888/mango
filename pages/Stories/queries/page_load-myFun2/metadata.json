@@ -3,7 +3,7 @@
   "pluginId": "js-plugin",
   "unpublishedAction": {
     "name": "myFun2",
-    "fullyQualifiedName": "JSObject1.myFun2",
+    "fullyQualifiedName": "page_load.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Login",
-    "collectionId": "Login_JSObject1",
+    "pageId": "Stories",
+    "collectionId": "Stories_page_load",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -33,13 +33,13 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-07-20T23:52:58Z"
+    "createdAt": "2023-07-21T20:01:30Z"
   },
-  "id": "Login_JSObject1.myFun2",
+  "id": "Stories_page_load.myFun2",
   "deleted": false,
-  "gitSyncId": "64b725d46bf5f36862b33bac_64b9c8da51b06c6cdc1f3c09"
+  "gitSyncId": "64b725d46bf5f36862b33bac_64bae41ab1e7302ccbd427f5"
 }

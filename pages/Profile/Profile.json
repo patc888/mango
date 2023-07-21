@@ -28,11 +28,13 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Profile_feeds",
-              "name": "feeds",
+              "id": "Profile_get_feeds",
+              "name": "get_feeds",
               "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "appsmith.store.jwt.id_token"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]

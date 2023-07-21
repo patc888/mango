@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 880,
+          "bottomRow": 1030,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -30,11 +30,13 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Stories_getStories",
-              "name": "getStories",
-              "confirmBeforeExecute": true,
+              "id": "Stories_get_stories",
+              "name": "get_stories",
+              "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "appsmith.store.jwt.id_token"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]

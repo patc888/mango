@@ -1,7 +1,7 @@
 {
     "boxShadow": "none",
     "mobileBottomRow": 4,
-    "widgetName": "Text1",
+    "widgetName": "StoryText",
     "displayName": "Text",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.c3b6033f570046f8c6288d911333a827.svg",
     "searchTags": [
