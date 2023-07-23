@@ -13,8 +13,8 @@
         {"key": "accentColor"},
         {"key": "primaryColumns.word.computedValue"},
         {"key": "tableData"},
-        {"key": "primaryColumns.pronunciation.computedValue"},
-        {"key": "primaryColumns.meaning.computedValue"}
+        {"key": "primaryColumns.meaning.computedValue"},
+        {"key": "primaryColumns.pronunciation.computedValue"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 0,
@@ -53,7 +53,7 @@
         }
     },
     "borderRadius": "0px",
-    "columnUpdatedAt": 1689969666861,
+    "columnUpdatedAt": 1690097703837,
     "primaryColumnId": "word",
     "defaultSelectedRowIndices": [0],
     "mobileBottomRow": 29,
@@ -80,7 +80,7 @@
     "borderWidth": "1",
     "primaryColumns": {
         "pronunciation": {
-            "computedValue": "{{VocabList.processedTableData.map((currentRow, currentIndex) => ( \nappsmith.store.vocab[currentRow.word] ? \n\tcurrentRow.pronunciation : \"\"\n))}}",
+            "computedValue": "{{VocabList.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"pronunciation\"]))}}",
             "isEditable": false,
             "alias": "pronunciation",
             "enableSort": true,
@@ -96,7 +96,7 @@
             "index": 2,
             "isDiscardVisible": true,
             "isVisible": true,
-            "label": "Pronunciation",
+            "label": "pronunciation",
             "fontStyle": "",
             "textColor": "",
             "columnType": "text",
@@ -110,7 +110,7 @@
             "verticalAlignment": "CENTER"
         },
         "meaning": {
-            "computedValue": "{{VocabList.processedTableData.map((currentRow, currentIndex) => ( \nappsmith.store.vocab[currentRow.word] ? \n\tcurrentRow.meaning : \"\"\n))}}",
+            "computedValue": "{{VocabList.processedTableData.map((currentRow, currentIndex) => ( \nappsmith.store.vocab[currentRow.word] != null ? \n\tcurrentRow.meaning : \"\"\n))}}",
             "isEditable": false,
             "alias": "meaning",
             "enableSort": true,
@@ -140,7 +140,7 @@
             "verticalAlignment": "CENTER"
         },
         "word": {
-            "computedValue": "{{VocabList.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"word\"]))}}",
+            "computedValue": "{{VocabList.processedTableData.map((currentRow, currentIndex) => ( currentRow.word))}}",
             "isEditable": false,
             "alias": "word",
             "enableSort": true,
@@ -171,7 +171,7 @@
             "verticalAlignment": "CENTER"
         }
     },
-    "onRowSelected": "{{\n  var m = appsmith.store.vocab;\n  m[VocabList.selectedRow.word] = 1;\n  storeValue('vocab', m);\n}}",
+    "onRowSelected": "{{\nvar m = appsmith.store.vocab;\nif (m == null) {\n\tm = new Map();\n}\nm[VocabList.selectedRow.word] = 1;\nstoreValue('vocab', m);\n}}",
     "key": "oj8aklpvoz",
     "canFreezeColumn": false,
     "isDeprecated": false,

@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun2",
-    "fullyQualifiedName": "page_load.myFun2",
+    "name": "myFun1",
+    "fullyQualifiedName": "page_load.myFun1",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,17 +13,17 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Login",
-    "collectionId": "Login_page_load",
+    "pageId": "Profile",
+    "collectionId": "Profile_page_load",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
@@ -33,13 +33,13 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-07-20T23:52:58Z"
+    "createdAt": "2023-07-23T03:56:17Z"
   },
-  "id": "Login_page_load.myFun2",
+  "id": "Profile_page_load.myFun1",
   "deleted": false,
-  "gitSyncId": "64b725d46bf5f36862b33bac_64b9c8da51b06c6cdc1f3c09"
+  "gitSyncId": "64b725d46bf5f36862b33bac_64bca4e1b1e7302ccbd4574f"
 }

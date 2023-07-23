@@ -28,11 +28,10 @@
     "dynamicBindingPathList": [
         {"key": "buttonColor"},
         {"key": "borderRadius"},
-        {"key": "isVisible"},
-        {"key": "isDisabled"}
+        {"key": "isVisible"}
     ],
     "text": "Sign in",
-    "isDisabled": "{{appsmith.store.jwt != null}}",
+    "isDisabled": "",
     "key": "kg7d1vkym8",
     "isDeprecated": false,
     "rightColumn": 29,

@@ -3,8 +3,19 @@ export default {
 	myVar2: {},
 	myFun1 () {
 	},
-	async myFun2 () {
-		//	use async-await or promises
-		//	await storeValue('varName', 'hello world')
+	async checkLoggedIn () {
+		if (appsmith.store.jwt == null) {
+			navigateTo("Login");
+		}
+	},
+	get_stories () {
+		try {
+			return get_stories.data;
+		} catch (error) {
+			removeValue('jwt');
+			showAlert(error);
+			console.log(error);
+			navigateTo("Login");
+		}
 	}
 }

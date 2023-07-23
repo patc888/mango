@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun2",
-    "fullyQualifiedName": "page_load.myFun2",
+    "name": "get_stories",
+    "fullyQualifiedName": "page_load.get_stories",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -21,10 +21,9 @@
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
-    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -33,13 +32,13 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-07-21T20:01:30Z"
+    "createdAt": "2023-07-23T07:05:33Z"
   },
-  "id": "Stories_page_load.myFun2",
+  "id": "Stories_page_load.get_stories",
   "deleted": false,
-  "gitSyncId": "64b725d46bf5f36862b33bac_64bae41ab1e7302ccbd427f5"
+  "gitSyncId": "64b725d46bf5f36862b33bac_64bcd13d3b53e00844f06cdc"
 }
