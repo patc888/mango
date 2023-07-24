@@ -49,7 +49,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async function () {\n  if (appsmith.store.jwt == null) {\n    navigateTo(\"Login\");\n  }\n  try {\n    console.log(\"getting stories\");\n    var stories = get_stories.data;\n    if (stories.message == \"Unauthorized\") {\n      console.log(\"error\");\n      navigateTo(\"Login\");\n    }\n    console.log(\"got stories\");\n    console.log(stories);\n    await storeValue('stories', stories);\n  } catch (e) {\n    console.log(\"got error\");\n    console.log(e.message);\n  }\n  return 200;\n}"
+                "async function () {\n  if (appsmith.store.jwt == null) {\n    navigateTo(\"Login\");\n  }\n  var stories = get_stories.data;\n  if (stories != null && stories.hasOwnProperty('message') && stories.message == \"Unauthorized\") {\n    await removeValue('stories');\n    navigateTo(\"Login\");\n    return;\n  }\n  await storeValue('stories', stories);\n  return 200;\n}"
               ],
               "timeoutInMillisecond": 10000
             }

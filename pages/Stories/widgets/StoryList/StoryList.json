@@ -70,7 +70,7 @@
     "currentItemsView": "{{[]}}",
     "triggeredItemView": "{{{}}}",
     "widgetName": "StoryList",
-    "listData": "{{appsmith.store.stories}}/",
+    "listData": "{{appsmith.store.stories.stories}}",
     "dynamicPropertyPathList": [{"key": "isVisible"}],
     "displayName": "List",
     "bottomRow": 148,
