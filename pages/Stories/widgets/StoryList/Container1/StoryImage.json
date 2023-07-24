@@ -2,6 +2,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 8,
     "widgetName": "StoryImage",
+    "onClick": "",
     "displayName": "Image",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.30c8cbd442cce232b01ba2d434c53a53.svg",
     "topRow": 0,
@@ -10,7 +11,7 @@
     "hideCard": false,
     "mobileRightColumn": 16,
     "animateLoading": true,
-    "dynamicTriggerPathList": [],
+    "dynamicTriggerPathList": [{"key": "onClick"}],
     "imageShape": "RECTANGLE",
     "dynamicBindingPathList": [
         {"key": "image"},
